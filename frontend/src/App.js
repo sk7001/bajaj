@@ -9,7 +9,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('https://bajaj-5-zbkj.onrender.com/bhfl', JSON.parse(input), {
+      const response = await axios.post('https://bajaj-5-zbkj.onrender.com:3000/bhfl', JSON.parse(input), {
         headers: { 'Content-Type': 'application/json' }
       });
       setResult(response.data);
